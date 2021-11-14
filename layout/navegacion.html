@@ -1,0 +1,192 @@
+<link rel="stylesheet" href="../css/estilos.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<body class="miColorFondo">
+    
+
+<!--Codigo anterior
+    <nav class="navbar navbar-expand-lg navbar-dark miColorNav">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="../pages/paginaPrincipal.html" target="_parent">
+                        <button type="button" class="miBoton">
+                            Página principal
+                        </button></a>
+                </li>
+                <li class="nav-item">
+                    <a href="../pages/inicioSesionUsuario.html" target="_parent">
+                        <button type="button" class="miBoton">
+                            Iniciar sesión usuario
+                        </button></a>
+                </li>
+                <li class="nav-item">
+                    <a href="../pages/registroUsuario.html" target="_parent">
+                        <button type="button" class="miBoton">
+                            Registrarse usuario
+                        </button></a>
+                </li>
+                <li class="nav-item">
+                    <a href="../pages/agendarCita.html" target="_parent">
+                        <button type="button" class="miBoton">
+                            Agendar mantenimiento
+                        </button></a>
+                </li>
+                <li class="nav-item">
+                    <a href="../pages/inicioSesionTecnico.html" target="_parent">
+                        <button type="button" class="miBoton">
+                            Iniciar sesion tecnico
+                        </button></a>
+                </li>
+                <li class="nav-item">
+                    <a href="../pages/registroTecnico.html" target="_parent">
+                        <button type="button" class="miBoton">
+                            Registro para Tecnico
+                        </button></a>
+                </li>
+                <li class="nav-item">
+                    <a href="../pages/citasTecnico.html" target="_parent">
+                        <button type="button" class="miBoton">
+                            Mantenimientos para realizar
+                        </button></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+  codigo nuevo
+  <nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Active</a>
+      </li>-->
+  
+
+  
+  <nav class="navbar navbar-expand-md bg-Success  navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand"  href="../pages/paginaPrincipal.html" target="_parent" data-toggle="popover" title="Inicio" data-content="Popup content">
+      <H4>  <img src="../img/icon.png" height="200px" class="rounded-circle ml-5 p-sm-5" alt="Inicio de Sesión (Tecnico)">INICIO</a></H4>
+
+
+
+    <!-- Links -->
+    <ul class="navbar-nav">
+      
+        <li class="nav-item">
+          <H4> <a class="nav-link"  href="../pages/agendarCita.html" target="_parent">Agenda tu Cita</a></H4>
+        </li>
+        <li class="nav-item">
+          <H4><a class="nav-link" href="../pages/citasTecnico.html"  target="_parent">Citas Tecnico</a></H4>
+        </li>
+        <li class="nav-item">
+          <h4><a class="nav-link" href="../pages/registroBici.html"  target="_parent">Registro de bicicleta</a></h4>
+        </li>
+      <!-- Dropdown Usuario -->
+      <li class="nav-item dropdown">
+        <H4><a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Sesion Usuario
+        </a> 
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="../pages/registroUsuario.html"  target="_parent">Registro</a>
+          <a class="dropdown-item" href="../pages/inicioSesionUsuario.html"  target="_parent">Inicie sesión</a>
+          </div></H4>
+      </li>
+      <!-- Dropdown Tecnico-->
+      <li class="nav-item dropdown">
+        <h4><a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Sesion Técnico
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="../pages/registroTecnico.html"  target="_parent">Registro</a>
+          <a class="dropdown-item" href="../pages/inicioSesionTecnico.html" target="_parent" >Inicie sesión</a>
+          
+        </div></h4>
+      </li>
+    </ul>
+</nav>
+
+
+    
+ 
+</div>   
+
+</div>
+
+
+  
+    <!-- 
+        <iframe src="../layout/navegacion.html" frameborder="0" width="100%" height="100px " ></iframe>
+       
+        Aqui inicie otro
+
+    <header class="container-fluid bg-secondary bg-gradient d-flex justify-content-center" id="header"> 
+        <div>
+          <h1 class="text-light mb-0 p-2 text-center"> Thecnical Service Daniel Bikers</h1>
+          <p class="text-light mb-0 p-2 text-center">contactanos (+57) 311 292 55 51</p>
+        </div>      
+    </header>     
+
+
+
+    <div class="fixed-top p-30">
+      <nav class="navbar navbar-light p-10" id="menu">
+        <div class="container container-fluid">
+          <button class="navbar-toggler d-inline-block align-text-top" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+             <img src="/imagenes/html5.png" alt="logo de TSDB" width="45">
+             <p>MENU</p>
+          </button>
+          
+          <div class="d-grid gap-2 d-md-flex justify-content-end"> 
+            <a class="btn fw-bold" href="../pages/inicioSesionUsuario.html" role="button" id="iniciousuario">Inicia Sesión</a>
+            <a class="btn " href="../pages/registroUsuario.html" role="button" id="creacuenta">Crea tu Cuenta</a>
+          </div>
+        </div>
+                
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header" >
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Bienvenido</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3" id=navsinoffcanvas>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Equipo Técnico </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                  <li><a class="dropdown-item" href="../pages/inicioSesionTecnico.html">Inicia Sesión</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="../pages/registroTecnico.html">Crea tu Cuenta</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Agenda </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                  <li><a class="dropdown-item" href="../pages/inicioSesionTecnico.html">elementos de agenda</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="../pages/registroTecnico.html">elementos de agenda</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                  <li><a class="dropdown-item" href="../pages/inicioSesionTecnico.html">poner servicios</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="../pages/registroTecnico.html">poner servicios</a></li>
+                </ul>
+              </li>
+                
+            </ul>
+              
+          </div>
+        </div>
+      </nav>
+      </div>
+    
+    
+    <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</body>
